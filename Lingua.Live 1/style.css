@@ -2,6 +2,10 @@
 html, body {
     font-family: Verdana,sans-serif;
     margin: 0;
+    border: 0;
+}
+div{
+    display: block;
 }
 .top,.top-bottom {
     position: fixed;
@@ -117,17 +121,25 @@ a {
     margin-top: 2rem;
 }
 
-.all-image{
-	margin:  55px  60.715px;
-	float: left;
-	width: 10%;
-	text-align: center;
-	background-color: #D3D3D3;
-	display: block; 
-	padding-right: 37.42px;
-    padding-left: 97.513px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.foto{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: 400px;
+    background-color:#D3D3D3;
+    opacity: 1;
+    display: block;
+}
+
+.foto-container:before,.foto-container:after{
+    content: " ";
+    display: table;
+    padding-top: 50px;
+}
+.ln-phone{
+    padding-left: 110px;
+
 }
